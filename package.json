@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines" : {
+    "node": "16.15.1"
+  },
   "scripts": {
     "test": "jest",
-    "start": "nodemon index.js",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "lint": "eslint src/js"
   },
   "author": "Eliseo Fuentes",
