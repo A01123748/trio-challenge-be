@@ -1,6 +1,6 @@
 const axios = require('axios').default;
 
-const callApi = (method = 'post', url, data = {}, params = {}, headers = {}) => 
+const callApi = (url, method = 'get', data = {}, params = {}, headers = {}) => 
     axios({
         method,
         url,
