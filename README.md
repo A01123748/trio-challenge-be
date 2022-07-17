@@ -31,3 +31,6 @@ npm run lint
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+## Technical Design
+[Technical Design](https://docs.google.com/document/d/1I3HpFebK13F9KPVKicdgZpgp77IYHrfTaK8yHrBnR8g/edit?usp=sharing)
