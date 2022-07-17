@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "engines" : {
+  "engines": {
     "node": "16.15.1"
   },
   "scripts": {
     "test": "jest",
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "lint": "eslint src/js"
+    "lint": "npx eslint *.js"
   },
   "author": "Eliseo Fuentes",
   "license": "MIT",
@@ -23,7 +23,9 @@
     "nodemon": "^2.0.19"
   },
   "devDependencies": {
-    "eslint": "^8.19.0",
+    "eslint": "^8.20.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
     "jest": "^28.1.3"
   }
 }
