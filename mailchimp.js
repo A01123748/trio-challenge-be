@@ -65,7 +65,8 @@ class Mailchimp {
           // If contact is not found on MockAPI, add to the list and remove/unsubscribe
           contactsToUpdate.push(new Contact(member.merge_fields?.FNAME, member.merge_fields?.LNAME, member.email_address, 'unsubscribed'));
         }
-        // Uncomment this to validate if members are updated and DON'T need to be synced up
+        /* Uncomment lines below to validate if members are updated and DON'T need to be synced up
+        */
         // else if(member.merge_fields.FNAME === foundContact.firstName && member.merge_fields.LNAME === foundContact.lastName && member.email_address === foundContact.email_address && member.status === foundContact.status){
         //         // Nothing to update
         //         filterArray.push(member.email_address);

@@ -1,5 +1,16 @@
 const { Syncer } = require('./syncer');
 
+const { API_TOKEN } = process.env;
+
+const security = (req, res, next) => {
+  const token = req.headers.authorization;
+
+  if (token !== `Bearer ${API_TOKEN}`) {
+    return res.status(401).send('Unauthorized!');
+  }
+  return next();
+}
+
 const sync = async (req, res) => {
   // Initialize syncer class
   const syncer = new Syncer();
@@ -21,4 +32,10 @@ const sync = async (req, res) => {
   return res.status(400).send('No contacs need sync');
 };
 
+const helloWorld = (req, res) => {
+  res.send('Hello World!');
+};
+
+module.exports.security = security;
 module.exports.sync = sync;
+module.exports.helloWorld = helloWorld;
