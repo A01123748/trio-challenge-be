@@ -34,3 +34,6 @@ npm run lint
 
 ## Technical Design
 [Technical Design](https://docs.google.com/document/d/1I3HpFebK13F9KPVKicdgZpgp77IYHrfTaK8yHrBnR8g/edit?usp=sharing)
+
+## Video
+[Backend Video](https://drive.google.com/file/d/15OsXPFASSwvwCqu-3rgGTbPl6uEYSn7H/view?usp=sharing)
